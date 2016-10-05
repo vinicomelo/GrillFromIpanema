@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <!-- SCROLLS -->
+  <!-- load bootstrap and fontawesome via CDN -->
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="css/bootstrap-theme.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+
+  <!--Customs CSS file  -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!--JQuery File  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="js/jquery.js"></script> -->
+
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/controllers.js"></script>
+  <script src="controllers/menutest.js"></script>
+  <script src="controllers/aboutController.js"></script>
+  <script src="controllers/mainController.js"></script>
+  <script src="controllers/eventsController.js"></script>
+  <script src="controllers/brunchController.js"></script>
+  <script src="controllers/tapasController.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</head>
+
+<body ng-controller='mainController'>
+    <!-- Fixed navbar -->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                    <a class="navbar-brand" href="/">The Grill from Ipanema</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- <li><a href="#menu">Menu</a></li> -->
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li class="dropdown">
+                          <a href="#menu" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#brunch">Brunch</a></li>
+                            <li><a href="#tapas">Brazilian Style Tapas</a></li>
+                            <li><a href="#chickenSaladSoup">Chicken, Salads, & Soups</a></li>
+                            <li><a href="#meats">Meats from the Grill</a></li>
+                            <li><a href="#special">Special Dishes</a></li>
+                            <li><a href="#seafood">Seafood</a></li>
+                            <li><a href="#drinks">Drinks</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <div ng-view>
+        </div>
+    </div>
+</body>
+</html>
