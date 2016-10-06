@@ -1,3 +1,57 @@
 <div class="jumbotron text-center">
     <p>{{title}}</p>
 </div>
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Three Course Brazilian Style Brunch</h2>
+            <h4>
+              Includes a house salad or black beans soup, choice ofentrée and dessert.<br /><br />
+            </h4>
+              <h5>$22.95 per person.<br />
+              $15 for bottomless mimosas.<br />
+              (Plus gratuity and tax).<br /></h5>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>First Course</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6" ng-repeat="item in firstCourseItems">
+            <h5>{{item.name}}</h5>
+            <p>{{item.description}}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Second Course</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" ng-repeat="item in secondCourseItems">
+            <h5>{{item.name}}</h5>
+            <p>{{item.description}}</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Third Course</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cold-md-12" ng-repeat="item in thirdCourseItems">
+        <h5>{{item.name}}</h5>
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+</div>

@@ -1,11 +1,11 @@
 myApp.config(function($routeProvider) {
     $routeProvider
-        .when('/saefood', {
-            templateUrl: 'pages/saefood.html',
-            controller: 'saefoodController'
+        .when('/seafood', {
+            templateUrl: 'pages/seafood.html',
+            controller: 'seafoodController'
         });
 });
 
-myApp.controller('saefoodController', function($scope) {
-    $scope.title = 'saefood title';
+myApp.controller('seafoodController', function($scope) {
+    $scope.title = 'seafood title';
 });
